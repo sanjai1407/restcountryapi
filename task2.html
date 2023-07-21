@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>All Countries</title>
+   <link rel="stylesheet" href="./task2.css">
+</head>
+
+<body>
+   <div class="cointainer">
+
+      <div class="heading">
+         <h2>List of Country-Details</h2>
+      </div>
+      <div class="search-contry">
+         <input type="text" onkeyup="searchPanel()" id="country-input" placeholder="Enter a Country Name" />
+      </div>
+      <div class="contain">
+         <table id="countries"></table>
+      </div>
+
+      <div class="popup" id="popups">
+         <div class="main-content">
+            <div class="popup-header">
+               <div class="title">Country Details</div>
+               <button class="close-button" id="buttonclose">x</button>
+            </div>
+            <div class="popupcontent">
+               <p><span id="flag"></span></p>
+               <p> <span id="countryname"></span></p>
+               <div>
+                  <h4>Country Capital: </h4><span id="countrycapital"></span>
+               </div>
+               <div>
+                  <h4>Population: </h4><span id="population"></span>
+               </div>
+               <div>
+                  <h4>Currency Name: </h4><span id="currencyname"></span>
+               </div>
+               <div>
+                  <h4>Currency Symbol: </h4><span id="currencysymbol"></span>
+               </div>
+               <div>
+                  <h4>Longitude: </h4><span id="longitude"></span>
+               </div>
+               <div>
+                  <h4>Latitude: </h4><span id="latitude"></span>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </div>
+   <script src="./task2.js"></script>
+
+</body>
+
+</html>
